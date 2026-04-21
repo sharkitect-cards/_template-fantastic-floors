@@ -396,7 +396,7 @@
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'Juan-Bernal.vcf';
+            a.download = '{{PERSON_FULL_NAME_DASH}}.vcf';
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
